@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc {
+    width: 400px;
+    height: 660px;
+    border: 2px solid;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+
+
+.calc .display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 20px;
+    min-height: 180px;
+}
+
+.calc .display .dispMain {
+    height: 100px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: rgb(94, 68, 244);
+}
+
+.calc .display .dispTemp {
+    height: 80px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: rgb(94, 68, 244);
+
+}
+
+.calc .display .dispMain.invisible {
+    opacity: 0;
+
+}
+
+.calc .display .dispTemp.animated {
+    transform: translateY(-90px);
+    color: green;
+    font-size: 50px;
+}
+
+.calc .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+.calc .nav .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.calc .nav img {
+    width: 40px;
+    height: 40px;
+}
+
+.calc .nav .left div,
+.right div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.calc .nav .left div:active,
+.right div:active {
+    background-color: rgb(202, 202, 214);
+}
+
+.calc .nav .left .unitConverter {
+    padding: 2px;
+}
+
+.calc .nav .unitConverter img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.calc .line {
+    border: 1px solid rgba(128, 128, 128, 0.168);
+    margin: 0 10px;
+}
+
+.calc .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px 10px;
+}
+
+.calc .buttons .symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: rgb(94, 68, 244);
+    background-color: rgb(247 247 255);
+    border: none;
+    border-radius: 50px;
+    font-size: 35px;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease, font-size 0.1s ease;
+}
+
+.calc .buttons .symbol:hover {
+    background-color: rgb(202, 202, 214);
+}
+
+.calc .buttons .equal:hover {
+    background-color: rgb(1, 95, 1);
+}
+
+.calc .buttons .symbol:active {
+    font-size: 30px;
+}
+
+.calc .buttons img {
+    transition: transform 0.1s ease;
+}
+
+.calc .buttons .symbol:active img {
+    transform: scale(0.8);
+}
+
+
+.calc .buttons .clear {
+    color: red;
+}
+
+.calc .buttons .operator {
+    color: green;
+}
+
+.calc .buttons .equal {
+    color: white;
+    background-color: green;
+    font-size: 50px;
+}

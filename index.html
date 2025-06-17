@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calc">
+        <div class="display">
+            <div class="dispMain"></div>
+            <div class="dispTemp"></div>
+        </div>
+
+        <div class="nav">
+            <div class="left">
+                <div class="history"><img src="Images/history.svg" alt=""></div>
+                <div class="unitConverter"><img src="Images/ruler.svg" alt=""></div>
+            </div>
+            <div class="right">
+                <div class="backspace"><img src="Images/backspace.svg" alt=""></div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="buttons">
+            <div class="symbol clear" data-value = "C">C</div>
+            <div class="symbol bracket" data-value = "("><img src="Images/parenthesis.svg" alt=""></div>
+            <div class="symbol operator percentage" data-value = ""><img src="Images/percent.svg" alt=""></div>
+            <div class="symbol operator divide" data-value = "/"><img src="Images/divide.svg" alt=""></div>
+            <div class="symbol number" data-value = "7">7</div>
+            <div class="symbol number" data-value = "8">8</div>
+            <div class="symbol number" data-value = "9">9</div>
+            <div class="symbol operator multiply" data-value = "*"><img src="Images/multiply.svg" alt=""></div>
+            <div class="symbol number" data-value = "4">4</div>
+            <div class="symbol number" data-value = "5">5</div>
+            <div class="symbol number" data-value = "6">6</div>
+            <div class="symbol operator minus" data-value = "-"><img src="Images/minus.svg" alt=""></div>
+            <div class="symbol number" data-value = "1">1</div>
+            <div class="symbol number" data-value = "2">2</div>
+            <div class="symbol number" data-value = "3">3</div>
+            <div class="symbol operator plus" data-value = "+"><img src="Images/plus.svg" alt=""></div>
+            <div class="symbol negative" data-value = "(-">+/-</div>
+            <div class="symbol number" data-value = "0">0</div>
+            <div class="symbol number dot" data-value = ".">.</div>
+            <div class="symbol equal" data-value = "=">=</div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
